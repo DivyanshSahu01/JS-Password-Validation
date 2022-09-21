@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Password Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="password-input">
+            <input type="password" id="password" placeholder="Enter Password">
+            <i class="fa-sharp fa-solid fa-eye" id="toggleBtn"></i>
+        </div>
+        <ul class="validation">
+            <li id="lower">At least one lowercase character.</li>
+            <li id="upper">At least one uppercase character.</li>
+            <li id="digits">At least one digit.</li>
+            <li id="length">At least 8 characters.</li>
+        </ul>
+        <button class="btn" id="generateBtn">Generate Random Password</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

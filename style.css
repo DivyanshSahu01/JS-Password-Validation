@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightpink;
+}
+.box{
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.btn{
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    background-color: none;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.btn:hover{
+    cursor: pointer;
+}
+.password-input{
+    position: relative;
+}
+.password-input > input + i{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.password-input > input{
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+}
+.password-input > input::after{
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+.password-input > input:focus{
+    outline: none;
+}
+.validation{
+    padding-top: 20px;
+}
+.validation > li{
+    list-style-type: none;
+}
+.validation > li::before{
+    content: '\f192';
+    font-family: fontAwesome;
+    margin-right: 5px;
+    color: rgb(212, 41, 41);
+}
+.validation > li.valid::before{
+    content: '\f00c';
+    font-family: fontAwesome;
+    margin-right: 5px;
+    color: rgb(48, 212, 48);
+}
